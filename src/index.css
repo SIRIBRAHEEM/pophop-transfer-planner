@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ffffff;
+  color: #1e1b2e;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(124, 58, 237, 0.14) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+.sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 2px solid #1e1b2e;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-weight: 800;
+  font-size: 0.78rem;
+  box-shadow: 0 3px 0 #1e1b2e;
+}
+
+.btn-chunk {
+  border: 2px solid #1e1b2e;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 4px 0 #1e1b2e;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.btn-chunk:hover { transform: translateY(-1px); box-shadow: 0 5px 0 #1e1b2e; }
+.btn-chunk:active { transform: translateY(3px); box-shadow: 0 1px 0 #1e1b2e; }
+.btn-chunk:focus-visible { outline: 3px solid #2d9cdb; outline-offset: 2px; }
+
+.card-chunk {
+  border: 2px solid #1e1b2e;
+  border-radius: 1.6rem;
+  box-shadow: 0 5px 0 #1e1b2e;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid #1e1b2e;
+  border-radius: 0.9rem;
+  padding: 0.55rem 0.8rem;
+  font-weight: 600;
+  background: #ffffff;
+}
+.field:focus { outline: 3px solid #ffb59d; outline-offset: 1px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-chunk { transition: none; }
+}
